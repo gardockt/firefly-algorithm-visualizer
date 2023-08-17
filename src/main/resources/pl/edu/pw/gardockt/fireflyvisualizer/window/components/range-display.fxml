@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.canvas.Canvas?>
+
+<?import javafx.scene.control.Label?>
+<fx:root xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" type="javafx.scene.layout.VBox">
+    <Canvas fx:id="gradientCanvas" height="20.0" width="400.0" />
+    <HBox>
+        <Label fx:id="minValueLabel" />
+        <Pane HBox.hgrow="ALWAYS" />
+        <Label fx:id="maxValueLabel" />
+    </HBox>
+</fx:root>

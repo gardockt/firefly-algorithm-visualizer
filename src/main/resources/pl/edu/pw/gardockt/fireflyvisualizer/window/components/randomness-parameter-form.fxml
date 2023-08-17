@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+        <columnConstraints>
+            <ColumnConstraints minWidth="10.0" prefWidth="270.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+        </rowConstraints>
+        <Label text="Funkcja współczynnika losowości:" />
+        <ChoiceBox fx:id="randomnessTypeChoiceBox" prefWidth="162.0" GridPane.columnIndex="1" />
+    </GridPane>
+    <StackPane>
+        <GridPane fx:id="constantRandomnessParametersLayout" hgap="10.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="268.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="161.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <Label text="Wartość:" />
+            <TextField fx:id="constantRandomnessValueField" GridPane.columnIndex="1" />
+        </GridPane>
+        <GridPane fx:id="geometricProgressionRandomnessParametersLayout" hgap="10.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="268.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="161.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <Label text="Wartość początkowa:" />
+            <TextField fx:id="geometricProgressionRandomnessStartValueField" GridPane.columnIndex="1" />
+            <Label text="Iloraz ciągu:" GridPane.rowIndex="1" />
+            <TextField fx:id="geometricProgressionRandomnessRatioField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        </GridPane>
+        <GridPane fx:id="startLimitProgressionRandomnessParametersLayout" hgap="10.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="268.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="161.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <Label text="Wartość początkowa:" />
+            <TextField fx:id="startLimitProgressionRandomnessStartValueField" GridPane.columnIndex="1" />
+            <Label text="Wartość graniczna:" GridPane.rowIndex="1" />
+            <TextField fx:id="startLimitProgressionRandomnessLimitValueField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <StackPane.margin>
+                <Insets />
+            </StackPane.margin>
+        </GridPane>
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+    </StackPane>
+</fx:root>
